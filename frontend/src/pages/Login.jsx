@@ -58,7 +58,7 @@ function Login() {
 
         <p className="register-link">
           Don't have an account?
-          <Link to="/register"> Register</Link>
+          <Link to="/register"> REGISTER</Link>
         </p>
 
       </div>
