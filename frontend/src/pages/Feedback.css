@@ -1,0 +1,83 @@
+
+.feedback-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.feedback-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.feedback-container h1 {
+  color: #102d50;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.feedback-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.feedback-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback-container label {
+  color: #102d50;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feedback-container input,
+.feedback-container select,
+.feedback-container textarea {
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.feedback-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.feedback-container input:focus,
+.feedback-container select:focus,
+.feedback-container textarea:focus {
+  border-color: #2563eb;
+}
+
+.feedback-container button {
+  margin-top: 15px;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.feedback-container button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .feedback-container {
+    padding: 22px;
+  }
+}

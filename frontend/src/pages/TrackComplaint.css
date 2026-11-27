@@ -1,0 +1,115 @@
+
+.track-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.track-container {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px #00000010;
+}
+
+.track-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.track-container h1 {
+  color: #17365d;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.track-container > p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.track-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.track-container label {
+  font-weight: bold;
+  color: #334155;
+}
+
+.track-container input {
+  padding: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.track-container input:focus {
+  border-color: #2563eb;
+}
+
+.track-container button {
+  padding: 15px;
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.track-container button:hover {
+  background: #173b9b;
+}
+
+.track-message {
+  margin-top: 25px;
+  padding: 20px;
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
+}
+
+.track-message h3 {
+  color: #1d4ed8;
+}
+
+.track-message p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.track-help {
+  margin-top: 35px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.track-help h3 {
+  color: #17365d;
+}
+
+.track-help p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .track-container {
+    padding: 25px;
+  }
+
+  .track-container h1 {
+    font-size: 24px;
+  }
+}
