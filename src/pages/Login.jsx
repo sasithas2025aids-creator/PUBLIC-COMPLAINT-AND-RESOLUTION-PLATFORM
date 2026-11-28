@@ -40,63 +40,32 @@ function Login() {
             <label className="block mb-2">Email ID</label>
 
             <input
-              type="email"
-              placeholder="Enter your email"
-              {...register("email", {
-                required: "Email is required"
-              })}
+              type="email" placeholder="Enter your email" {...register("email", { required: "Email is required" })}
               className="w-full border p-2 rounded-md"
             />
 
-            {errors.email && (
-              <p className="text-red-500 text-sm">
-                {errors.email.message}
-              </p>
+            {errors.email && (<p className="text-red-500 text-sm">{errors.email.message} </p>
             )}
           </div>
 
           <div className="mb-5">
             <label className="block mb-2">Password</label>
 
-            <input
-              type="password"
-              placeholder="Enter your password"
-              {...register("password", {
-                required: "Password is required",
-                minLength: {
-                  value: 6,
-                  message: "Minimum 6 characters required"
-                }
-              })}
+            <input type="password" placeholder="Enter your password" {...register("password", { required: "Password is required",minLength: {value: 6, message: "Minimum 6 characters required"}})}
               className="w-full border p-2 rounded-md"
             />
 
-            {errors.password && (
-              <p className="text-red-500 text-sm">
-                {errors.password.message}
-              </p>
-            )}
+            {errors.password && (<p className="text-red-500 text-sm"> {errors.password.message} </p>)}
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600"
-          >
-            Login
-          </button>
+          <button type="submit" className="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600" > Login </button>
 
         </form>
 
         <p className="text-center mt-5 text-gray-600">
           Don't have an account?
 
-          <button
-            type="button"
-            onClick={() => navigate('/register')}
-            className="text-blue-600 font-semibold ml-1"
-          >
-            Register
-          </button>
+          <button type="button" onClick={() => navigate('/register')} className="text-blue-600 font-semibold ml-1" > Register </button>
         </p>
 
       </div>
